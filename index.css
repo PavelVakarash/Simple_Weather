@@ -1,73 +1,65 @@
-.box {
-    margin: 40px;
-    padding: 30px;
-    width: 300px;
-    height: 450px;
-    color: aqua;
-    animation: changeColor 5s infinite;
-    background: radial-gradient(circle, rgb(154, 160, 222) 0%, rgb(150, 193, 233) 91%);
-    display: flex;
-    flex-direction: column;
-    align-items:center;
-    justify-content: space-evenly;
-    font-size: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-#img-meteo {
-    height: 150px;
-    width: 350px;
-}
-
-#weather-code {
-    font-size: 30px;
-    color: aquamarine;
-}
-
-#temperature {
-    color: aquamarine;
-}
-
-#img-box {
-    display: flex;
-}
-
-#img-rain,
-#img-snow {
-    height: 40px;
-    width: 40px;
-    animation: changeOpacity 7s infinite;
-}
-#img-sun {
-    height: 40px;
-    width: 40px;
-    animation: changeScale 7s infinite;
-}
-
-@keyframes changeColor {
-    0% {
-        background: radial-gradient(circle, rgb(154, 160, 222) 0%, rgb(150, 193, 233) 91%);
-    }
-
-    100% {
-        background: radial-gradient(circle, rgb(165, 154, 222) 0%, rgb(150, 193, 233) 91%);
-    }
-}
-
-@keyframes changeOpacity {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-}
-
-@keyframes changeScale {
-    0% {
-        scale: 1;
-    }
-    50% {
-        scale: 1.5;
-    }
-}
+body,html {
+    margin: 0;
+ }
+ .box {
+     padding-top: 50px;
+     width: 100%;
+     height: 350px;
+     color:chartreuse;
+     display: flex;
+     flex-direction: column;
+     align-items:center;
+     justify-content: space-evenly;
+     font-size: 60px;
+     font-family: Arial, Helvetica, sans-serif;
+     position: relative;
+ }
+ #background-img {
+     height: 100%;
+     width: 100%;
+     position: absolute;
+ }
+ 
+ #img-meteo {
+     height: 150px;
+     width: 350px;
+ }
+ 
+ #weather-code {
+     font-size: 40px;
+     color:aquamarine;
+ }
+ 
+ #img-box {
+     display: flex;
+ }
+ 
+ #img-rain,
+ #img-snow {
+     height: 70px;
+     width: 70px;
+     animation: changeOpacity 7s infinite;
+ }
+ #img-sun {
+     height: 70px;
+     width: 70px;
+     animation: changeScale 7s infinite;
+ }
+ 
+ @keyframes changeOpacity {
+     0% {
+         opacity: 1;
+     }
+     50% {
+         opacity: 0;
+     }
+ }
+ 
+ @keyframes changeScale {
+     0% {
+         scale: 1;
+     }
+     50% {
+         scale: 1.5;
+     }
+ }
